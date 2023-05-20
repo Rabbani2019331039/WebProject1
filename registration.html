@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CourseFul</title>
+
+   <!-- google fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Gugi&family=MuseoModerno:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+   <!-- css links -->
+   <link rel="stylesheet" type="text/css" href="./css/styles.css">
+   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+   <!-- boxicon link -->
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+
+</head>
+
+<body>
+   <!-- script -->
+   <script type="text/javascript" src="./js/script.js" defer></script>
+
+   <header class="navbar">
+      <div class="logo-container">
+         <a href="#" class="logo">CourseFul</a>
+      </div>
+      <div class="nav-menu">
+         <ul class="nav-menu-list">
+            <li><a href="#" class="link">Home</a></li>
+            <li><a href="#" class="link">Contact Us</a></li>
+         </ul>
+      </div>
+      <div class="nav-button">
+         <form action="">
+            <button type="button" class="nav-btn">Log In</button>
+            <button type="button" class="nav-btn">Sign Up</button>
+
+         </form>
+      </div>
+
+
+   </header>
+   <main>
+      <div class="motto">
+         <p>Let's <span class="only">Start </span><br>Your Course Management <br>Journey</p>
+      </div>
+
+      <div class="container registration">
+         <div class="main-box">
+            <h1>Sign Up</h1>
+            <form action="" method="">
+               <div class="input-box">
+                  <span class="icon"><i class='bx bxs-user'></i></span>
+                  <input type="text" required>
+                  <label for="">Username</label>
+               </div>
+               <div class="input-box">
+                  <span class="icon"><i class='bx bxs-envelope'></i></span>
+                  <input type="email" required>
+                  <label for="">Email</label>
+               </div>
+               <div class="input-box">
+                  <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                  <input type="password" required>
+                  <label for="">Password</label>
+               </div>
+               <div class="input-box">
+                  <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                  <input type="password" required>
+                  <label for="">Confirm Password</label>
+               </div>
+               <section class="radio-section">
+                  <div class="user-type">
+                     <div class="radio-item">
+                        <input type="radio" name="user" value="admin" id="admin" checked>
+
+                        <label for="admin">Admin</label>
+                     </div>
+                     <div class="radio-item">
+                        <input type="radio" name="user" value="student" id="student">
+                        <label for="student">Student</label>
+                     </div>
+                     <div class="radio-item">
+                        <input type="radio" name="user" value="teacher" id="teacher">
+                        <label for="teacher">Teacher</label>
+                     </div>
+                  </div>
+               </section>
+               <button type="submit" class="login-button">LogIn</button>
+            </form>
+         </div>
+      </div>
+   </main>
+
+   <footer>
+      <p>Copyright &copy; SUST CSE- 39 & 85 </p>
+   </footer>
+
+
+</body>
+
+</html>
