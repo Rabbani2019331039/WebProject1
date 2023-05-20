@@ -9,6 +9,10 @@
 	user-select: none;
 }
 
+html {
+	scrollbar-color: #6969dd #e0e0e0;
+	scrollbar-width: thin;
+}
 body {
 	min-height: 100vh;
 	background-image: url(../img/landscape.jpg);
@@ -218,7 +222,7 @@ footer {
 	top: 50%;
 	transform: translateY(-8px);
 	pointer-events: none;
-	color: #280653;
+	color: #fae3f4;
 	font-size: 20px;
 	font-weight: 600;
 	transition: all ease 0.45s;
@@ -291,7 +295,8 @@ footer {
 	background: #c71064;
 }
 
-.login-button {
+.login-button,
+.add-course-button {
 	margin-top: 30px;
 	background: #c71064;
 	width: 100%;
@@ -343,10 +348,11 @@ footer {
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-end;
-	flex-wrap: wrap;
 	position: absolute;
-	right: 100px;
-	top: 22%;
+	right: 120px;
+	bottom: 200px;
+	line-height: 50px;
+	/* top: 22%; */
 	/* margin-bottom: 60px; */
 }
 
@@ -359,12 +365,148 @@ footer {
 	user-select: none;
 }
 
-.adv .dark {
+/* admin page css */
+
+.main-container {
+	margin: 2px;
+	display: flex;
+	flex-grow: 1;
+	justify-content: space-around;
+	gap: 20px;
+	padding: 0 40px 0 40px;
+}
+
+.optionBar {
+	align-items: flex-start;
+	backdrop-filter: blur(5px);
+	background: transparent;
+	border-radius: 8px;
+	border: 3px solid rgba(255, 255, 255, 0.75);
+	display: flex;
+	flex-flow: row wrap;
+	flex-grow: 0.25;
+	height: 84vh;
+	justify-content: space-between;
+	width: 23%;
+}
+
+.listView {
+	align-items: flex-start;
+	display: flex;
+	flex-flow: row wrap;
+	height: 84vh;
+	justify-content: space-between;
+	width: 75%;
+}
+
+.list-heading {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background: transparent;
+	backdrop-filter: blur(5px);
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	border-radius: 8px 8px 0 0;
+	border-bottom: 2px solid whitesmoke;
+	padding: 0 15px 0 15px;
+	font-weight: 700;
+	font-size: 1.2rem;
+}
+
+.list-content {
+	overflow-y: auto;
+	width: 100%;
+	height: calc(100% - 50px);
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+}
+
+.list-content::-webkit-scrollbar {
+	width: 0px;
+}
+
+.list-item {
+	width: 100%;
+	height: 50px;
+	background: rgb(255, 230, 204, 0.4);
+	/* backdrop-filter: blur(20px); */
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	flex-grow: 1;
+	padding: 0 20px 0 20px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	transition: all ease 0.2s;
+}
+
+.list-item:hover {
+	background: rgba(200, 200, 200, 0.8);
+	/* background: rgba(255, 227, 197, 0.8); */
+}
+
+.heading-id {
+	flex-grow: 1;
+	text-align: left;
+}
+.heading-name,
+.heading-email {
+	/* min-width: 2fr; */
+	text-align: left;
+	flex-grow: 2;
+}
+
+/* .list-content .list-item .items {
+	text-align: left;
+	flex-grow: 2;
+} */
+
+.new-course-form {
+	/* justify-content: flex-start; */
+	/* align-items: start; */
+	/* align-content: flex-start; */
+	width: 100%;
+	height: 100%;
+	flex-grow: 1;
+	padding-left: 10%;
+	padding-right: 30%;
+	padding-top: 10%;
+	/* background: #270653bc; */
+	backdrop-filter: blur(5px);
+}
+
+/* .new-course-form label {
+	position: relative;
+	justify-content: flex-start;
+} */
+
+/* .new-course-form .input-box {
+	margin-left: 20px;
+} */
+
+.add-course-button {
+	width: 50%;
+}
+
+.glass-morphism {
+	background: rgba(255, 230, 204, 0.3);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(2.5px);
+	-webkit-backdrop-filter: blur(2.5px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.dark-color {
+	color: #280653;
+}
+.new-course-form .input-box input {
 	color: #280653;
 }
 
-/* admin page css */
-
-.admin-page {
-	backdrop-filter: blur(5px);
+.new-course-form .input-box label {
+	color: #280653;
 }
