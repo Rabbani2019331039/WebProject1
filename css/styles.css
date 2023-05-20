@@ -403,16 +403,16 @@ footer {
 	position: relative;
 	width: 100%;
 	height: 50px;
-	background: transparent;
+	background: rgba(40, 6, 83, 0.3);
 	backdrop-filter: blur(5px);
 	display: flex;
 	align-items: center;
+	align-content: center;
 	justify-content: start;
 	border-radius: 8px 8px 0 0;
 	border-bottom: 2px solid whitesmoke;
-	padding: 0 15px 0 15px;
-	font-weight: 700;
-	font-size: 1.2rem;
+	padding: 0 0 0 25px;
+	font-weight: 800;
 }
 
 .list-content {
@@ -432,11 +432,10 @@ footer {
 .list-item {
 	width: 100%;
 	height: 50px;
-	background: rgb(255, 230, 204, 0.4);
-	/* backdrop-filter: blur(20px); */
+	background: rgb(255, 230, 204, 0.3);
 	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 	flex-grow: 1;
-	padding: 0 20px 0 20px;
+	padding: 0 0 0 25px;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -445,36 +444,38 @@ footer {
 
 .list-item:hover {
 	background: rgba(200, 200, 200, 0.8);
-	/* background: rgba(255, 227, 197, 0.8); */
+	/* background: rgba(255, 203, 216, 0.8); */
 }
 
-.heading-id {
+.heading-id,
+.heading-action {
 	flex-grow: 1;
 	text-align: left;
+	flex-wrap: wrap;
 }
 .heading-name,
-.heading-email {
-	/* min-width: 2fr; */
+.heading-email,
+.heading-description {
 	text-align: left;
 	flex-grow: 2;
+	flex-wrap: wrap;
 }
 
-/* .list-content .list-item .items {
-	text-align: left;
-	flex-grow: 2;
+.heading-action {
+	min-width: 150px;
+}
+
+/* .heading-description {
+	flex-grow: 3;
 } */
 
 .new-course-form {
-	/* justify-content: flex-start; */
-	/* align-items: start; */
-	/* align-content: flex-start; */
 	width: 100%;
 	height: 100%;
 	flex-grow: 1;
 	padding-left: 10%;
 	padding-right: 30%;
 	padding-top: 10%;
-	/* background: #270653bc; */
 	backdrop-filter: blur(5px);
 }
 
@@ -506,7 +507,31 @@ footer {
 .new-course-form .input-box input {
 	color: #280653;
 }
-
 .new-course-form .input-box label {
 	color: #280653;
+}
+
+.enroll-btn {
+	padding: 3px 20px;
+	color: #280653;
+	border: 2px solid #280653;
+	border-radius: 8px;
+
+	/* display: inline-block; */
+	width: 60%;
+	cursor: pointer;
+	transition: all ease 0.45s;
+	background-color: transparent;
+}
+
+.enroll-btn:hover {
+	transform: scale(1.1);
+	background: #280653;
+	color: whitesmoke;
+}
+
+.option-link {
+	text-decoration: none;
+	color: #c71064;
+	transition: all ease 0.45;
 }
