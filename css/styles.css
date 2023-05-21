@@ -511,6 +511,10 @@ footer {
 	color: #280653;
 }
 
+.hdn-courseId {
+	display: none;
+}
+
 .enroll-btn {
 	padding: 3px 20px;
 	color: #280653;
@@ -534,4 +538,12 @@ footer {
 	text-decoration: none;
 	color: #c71064;
 	transition: all ease 0.45;
+}
+
+.greetings {
+	font-size: 4rem;
+	font-weight: 500;
+	color: #270653;
+	padding-bottom: 15%;
+	padding-right: 40%;
 }
